@@ -8,19 +8,19 @@ because this is ment to optimizing for reciving ArtNet packets, that have a size
 Ethernet module | F_CPU | F_BUS | SPI | burst size
 ------------ | ------------ | ------------- | ------------- | -------------
 Wiz850io 16K | 96MHz | 48MHz | 24MHz | 28
-Wiz850io 16K | 120MHz | 60MHz | 30MHz | 29
 Wiz850io 16K | 144MHz | 48MHz | 24MHz | 29
-Wiz850io 16K | 168MHz | 56MHz | 28MHz | 29
-Wiz850io 16K | 180MHz | 60MHz | 30MHz | 30
-Wiz850io 16K | 180MHz | 90MHz | 45MHz | 31/32
 Wiz850io 16K | 192MHz | 48MHz | 24MHz | 29
-Wiz850io 16K | 192MHz | 64MHz | 32MHz | 30
-Wiz850io 16K | 192MHz | 96MHz | 48MHz | NA
 Wiz850io 16K | 216MHz | 54MHz | 27MHz | 29
-Wiz850io 16K | 216MHz | 72MHz | 36MHz | 30
-Wiz850io 16K | 216MHz | 108MHz | 54MHz | NA
+Wiz850io 16K | 168MHz | 56MHz | 28MHz | 29
+Wiz850io 16K | 120MHz | 60MHz | 30MHz | 29
+Wiz850io 16K | 180MHz | 60MHz | 30MHz | 30
 Wiz850io 16K | 240MHz | 60MHz | 30MHz | 30
+Wiz850io 16K | 192MHz | 64MHz | 32MHz | 30
+Wiz850io 16K | 216MHz | 72MHz | 36MHz | 30
 Wiz850io 16K | 240MHz | 80MHz | 40MHz | 31
+Wiz850io 16K | 180MHz | 90MHz | 45MHz | 31/32
+Wiz850io 16K | 192MHz | 96MHz | 48MHz | NA
+Wiz850io 16K | 216MHz | 108MHz | 54MHz | NA
 Wiz850io 16K | 240MHz | 120MHz | 60MHz | NA
 
 ## Teensy 3.2

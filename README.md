@@ -18,6 +18,7 @@ Wiz850io 16K | 240MHz | 60MHz | 30MHz | 30
 Wiz850io 16K | 192MHz | 64MHz | 32MHz | 30
 Wiz850io 16K | 216MHz | 72MHz | 36MHz | 30
 Wiz850io 16K | 240MHz | 80MHz | 40MHz | 31
+Wiz850io 16K | 240MHz | 120MHz | 40MHz | 32
 Wiz850io 16K | 180MHz | 90MHz | 45MHz | 31/32
 Wiz850io 16K | 192MHz | 96MHz | 48MHz | NA
 Wiz850io 16K | 216MHz | 108MHz | 54MHz | NA
@@ -39,6 +40,7 @@ in `W5100::read`
 Ethernet module | F_CPU | F_BUS | SPI | burst size
 ------------ | ------------ | ------------- | ------------- | -------------
 Wiz850io 16K | 96MHz | 48MHz | 24MHz | 31
+Wiz850io 16K | 240MHz | 120MHz | 40MHz | 37
 Wiz850io 16K | 180MHz | 90MHz | 45MHz | 37
 
 

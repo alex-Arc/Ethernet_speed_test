@@ -33,7 +33,7 @@ digitalWrite(resetpin,LOW);
 delayMicroseconds(2);
 digitalWrite(resetpin,HIGH);
 delay(200);
-    
+
   Ethernet.begin(mac, ip);
   Udp.begin(localPort);
   //Serial.begin(115200);
@@ -60,7 +60,7 @@ void loop() {
  * import hypermedia.net.*;
 
  UDP udp;  // define the UDP object
- 
+
  int spacing = 1;
  int packetSizeMultip = 60;
  int burstSize = 30;
@@ -87,7 +87,7 @@ void keyPressed() {
    for(int i  = 0; i < packetSizeMultip; i++) {
      str += str1;
    }
- 
+
   for(int i  = 0; i < burstSize; i++) {
     udp.send(str, ip, port );   // the message to send
     //delayMicroseconds(spacing);
@@ -108,5 +108,4 @@ void keyPressed() {
  }
  numPackRec++;
  }
- */
  */

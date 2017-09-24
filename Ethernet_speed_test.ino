@@ -57,55 +57,50 @@ void loop() {
 }
 
 /*
- * import hypermedia.net.*;
-
- UDP udp;  // define the UDP object
-
- int spacing = 1;
- int packetSizeMultip = 60;
- int burstSize = 30;
- int numPackRec = 0;
-
-
- void setup() {
- udp = new UDP( this, 6000 );  // create a new datagram connection on port 6000
- //udp.log( true );     // <-- printout the connection activity
- udp.listen( true );           // and wait for incoming message
- }
-
- void draw()
- {
- }
-
-void keyPressed() {
-  if (key == ENTER) {
-  numPackRec = 0;
-   String ip       = "2.0.0.10";  // the remote IP address
-   int port        = 8888;    // the destination port
-   String str = "";
-   String str1 = "pjamlstont";
-   for(int i  = 0; i < packetSizeMultip; i++) {
-     str += str1;
-   }
-
-  for(int i  = 0; i < burstSize; i++) {
-    udp.send(str, ip, port );   // the message to send
-    //delayMicroseconds(spacing);
-  }
-  delay(16);
-  println("loss = " + (burstSize - numPackRec));
-  }
+void setup() {
+udp = new UDP( this, 6000 );  // create a new datagram connection on port 6000
+//udp.log( true );     // <-- printout the connection activity
+udp.listen( true );           // and wait for incoming message
 }
 
- void receive( byte[] data ) {       // <-- default handler
- //void receive( byte[] data, String ip, int port ) {  // <-- extended handler
- long len = (data[0]&0xFF) | data[1]<<8;
- if (len != packetSizeMultip*10) {
-   println("len error");
+void draw()
+{
+}
+
+void keyPressed() {
+if (key == ENTER) {
+numPackRec = 0;
+ String ip       = "2.0.0.10";  // the remote IP address
+ int port        = 8888;    // the destination port
+ String str = "";
+ String str1 = "pjamlstont";
+ for(int i  = 0; i < packetSizeMultip; i++) {
+   str += str1;
  }
- if (char(data[2]) != 't') {
-   println("data error");
- }
- numPackRec++;
- }
+
+for(int i  = 0; i < burstSize; i++) {
+  udp.send(str, ip, port );   // the message to send
+  //delayMicroseconds(spacing);
+}
+delay(16);
+println("loss = " + (burstSize - numPackRec) + " of " + burstSize);
+if (burstSize - numPackRec >= 1) {
+  burstSize--;
+}else {
+  burstSize++;
+}
+}
+}
+
+void receive( byte[] data ) {       // <-- default handler
+//void receive( byte[] data, String ip, int port ) {  // <-- extended handler
+long len = (data[0]&0xFF) | data[1]<<8;
+if (len != packetSizeMultip*10) {
+ println("len error");
+}
+if (char(data[2]) != 't') {
+ println("data error");
+}
+numPackRec++;
+}
  */

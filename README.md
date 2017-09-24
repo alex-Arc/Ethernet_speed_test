@@ -35,6 +35,7 @@ with
 SPI1.transfer(buf, buf, len);
 ```
 in `W5100::read`
+
 Ethernet module | F_CPU | F_BUS | SPI | burst size
 ------------ | ------------ | ------------- | ------------- | -------------
 Wiz850io 16K | 96MHz | 48MHz | 24MHz | 31

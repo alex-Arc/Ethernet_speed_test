@@ -1,7 +1,7 @@
 # Ethernet speed test
-testing ethernet "speed" by sending a number of packet in bursts and testing if there is a correct reply  for each
+testing ethernet "speed" by sending a number of packet in bursts and testing if there is a correct reply  for each.
 
-because this is ment to optimizing for reciving ArtNet packets, that have a size of abount 550 bytes, the test is run with a packet size of 600 bytes
+Because this is meant to optimiz for reciving ArtNet packets, that have a size of about 550 bytes, the test is run with a packet size of 600 bytes
 
 ## Teensy 3.6
 ### using SPI1 without FIFO
